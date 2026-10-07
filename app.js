@@ -38,7 +38,8 @@ if (form) {
         const selection =
           {
             ffpe: ["FFPE Tissue Blocks"],
-            biofluids: ["Matched Serum", "Matched Plasma"],
+            frozen: ["Frozen / OCT Tissue"],
+            biofluids: ["Matched Serum/Plasma"],
             pbmcs: ["PBMCs"],
           }[link.dataset.specimen] || [];
         form.querySelectorAll('[name="specimens"]').forEach((input) => {
@@ -68,14 +69,16 @@ if (form) {
       "BHAVA BIOSCIENCES — COHORT FEASIBILITY REQUEST",
       "Prepared locally. This request has NOT been submitted.",
       "",
-      `Name: ${values.get("firstName").trim()} ${values.get("lastName").trim()}`,
+      `Name: ${values.get("fullName").trim()}`,
+      `Academic / corporate title: ${values.get("title").trim()}`,
+      `Spatial platform / assay: ${values.get("platform") || "Not specified"}`,
       `Work email: ${values.get("email").trim()}`,
       `Institution: ${values.get("company").trim()}`,
       `Therapeutic area: ${values.get("area") || "Not specified"}`,
       `Specimen matrix: ${values.getAll("specimens").join(", ") || "Not specified"}`,
       `Target cohort size: ${values.get("cohortSize") || "Not specified"}`,
       "",
-      "Key study criteria:",
+      "Study specifications:",
       values.get("criteria").trim() || "Not specified",
     ].join("\n");
     const url = URL.createObjectURL(
@@ -91,7 +94,7 @@ if (form) {
     const result = document.querySelector("#form-result");
     result.hidden = false;
     result.textContent =
-      "Your request summary is ready. Check your downloads for bhava-cohort-request.txt. This request has not been sent to Bhava Biosciences.";
+      "Your request summary is ready. Check your downloads for bhava-cohort-request.txt. Email the file to contact@bhavabio.com to request your feasibility assessment. This request has not been sent automatically.";
   });
 }
 

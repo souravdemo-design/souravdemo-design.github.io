@@ -1,11 +1,11 @@
 :root {
-  --paper: #f8f9f4;
-  --ink: #183e35;
-  --muted: #67746c;
-  --green: #254d40;
-  --lime: #dce9ac;
-  --line: #dce1d6;
-  --light: #eef1e6;
+  --paper: #faf9f5;
+  --ink: #294b40;
+  --muted: #616e68;
+  --green: #355c50;
+  --lime: #d4dfd2;
+  --line: #dce1d9;
+  --light: #eef1eb;
   --white: #fff;
   --heading: "Trebuchet MS", Arial, sans-serif;
   --body: Arial, Helvetica, sans-serif;
@@ -82,7 +82,7 @@ h3 {
 em {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
-  color: #6a805a;
+  color: #647e76;
 }
 p {
   color: var(--muted);
@@ -96,7 +96,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid #829952;
+  outline: 3px solid #6b909e;
   outline-offset: 5px;
 }
 ::selection {
@@ -125,8 +125,8 @@ textarea:focus-visible {
   height: 7px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #829c63;
-  box-shadow: 0 0 0 4px #829c6312;
+  background: #78917a;
+  box-shadow: 0 0 0 4px #78917a12;
 }
 .button {
   display: inline-flex;
@@ -198,7 +198,7 @@ textarea:focus-visible {
   top: 10px;
 }
 .site-header {
-  background: #f8f9f4f5;
+  background: #faf9f5f5;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -523,7 +523,7 @@ textarea:focus-visible {
   font-size: 11px;
 }
 .specimen-section {
-  background: #eef1e6;
+  background: #eef1eb;
 }
 .specimen-grid {
   display: grid;
@@ -590,7 +590,7 @@ textarea:focus-visible {
   color: var(--muted);
 }
 .comparison-row > div:nth-child(3) {
-  background: #ecf1e2;
+  background: #eaf0e9;
 }
 .comparison-row + .comparison-row {
   border-top: 1px solid var(--line);
@@ -679,7 +679,7 @@ textarea:focus-visible {
 }
 .site-footer {
   padding-top: 65px;
-  background: #f3f5ed;
+  background: #f0f2ec;
 }
 .footer-top {
   display: grid;
@@ -2083,3 +2083,52 @@ textarea:focus-visible {
   line-height: 1.13;
   margin-bottom: 27px;
 }
+
+/* Brand palette and spatial research details. */
+:root { --blue: #6b909e; }
+.logo-window { display: block; width: 235px; height: 110px; position: relative; overflow: hidden; flex-shrink: 0; }
+.logo-window img { position: absolute; width: 320px; max-width: none; height: 160px; left: -42px; top: -21px; mix-blend-mode: multiply; }
+.brand { flex-shrink: 0; }
+.site-header nav { gap: 22px; }
+.site-header nav > a { white-space: nowrap; }
+.hero { grid-template-columns: 1.1fr 1fr; }
+.hero h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 4.4vw, 65px); letter-spacing: -.055em; line-height: 1.08; }
+.hero .eyebrow { font-size: 9px; letter-spacing: .1em; }
+.hero-description { max-width: 550px; }
+.brand-panel { aspect-ratio: auto; align-self: stretch; background: #f0f2ec; border: 1px solid var(--line); display: flex; flex-direction: column; justify-content: center; padding: 35px; min-height: 440px; border-radius: 120px 8px 8px 8px; }
+.brand-panel > .eyebrow { font-size: 9px; color: #567467; justify-content: center; text-align: center; }
+.brand-panel > img { width: 100%; height: auto; mix-blend-mode: multiply; object-fit: contain; }
+.brand-panel-details { display: grid; gap: 10px; border-top: 1px solid #cfd8d1; padding-top: 25px; margin-top: 12px; font-size: 12px; letter-spacing: .04em; color: #4a6971; }
+.brand-panel > p { margin: 25px 0 0; font-family: Georgia, serif; font-style: italic; font-size: 18px; }
+.form-notice a { text-decoration: underline; }
+.footer-brand { padding: 0; }
+.footer-top > div:first-child > p { max-width: 310px; }
+@media (max-width: 1100px) { .site-header nav { gap: 13px; font-size: 11px; } .site-header .button { padding: 12px; gap: 10px; } .logo-window { width: 210px; height: 100px; } .logo-window img { width: 290px; height: 145px; left: -40px; top: -19px; } .brand-panel { padding: 25px; } }
+@media (max-width: 900px) and (min-width: 801px) { .header-inner { flex-wrap: wrap; justify-content: center; padding-bottom: 12px; } .site-header nav { width: 100%; justify-content: space-between; } html { scroll-padding-top: 165px; } }
+@media (max-width: 800px) { .hero { grid-template-columns: 1fr 1fr; } .brand-panel { min-height: 360px; padding: 25px 18px; border-top-left-radius: 75px; } .brand-panel > .eyebrow { font-size: 7px; } .brand-panel > p { font-size: 16px; } }
+@media (max-width: 560px) { .hero { grid-template-columns: 1fr; } .hero h1 { font-size: clamp(37px, 9.2vw, 51px); } .hero .eyebrow { font-size: 8px; } .brand-panel { min-height: 330px; margin: 0; padding: 30px; } .brand-panel > img { max-width: 350px; align-self: center; } .footer-top > div:first-child { display: block; } .footer-top > div:first-child > p { margin-top: 12px; } .form-grid { grid-template-columns: 1fr; } }
+
+/* Five-section layout from the website brief. */
+.science-hero { margin: 0; align-self: stretch; position: relative; min-width: 0; min-height: 460px; border-radius: 100px 8px 8px 8px; overflow: hidden; background: #cbd7ca; }
+.science-hero img { width: 100%; height: 100%; position: absolute; object-fit: cover; }
+.science-hero figcaption { position: absolute; inset: auto 0 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 55px 24px 22px; color: white; background: linear-gradient(transparent, #193c36d9); font-size: 9px; letter-spacing: .09em; }
+.comparison-section { border-top: 1px solid var(--line); }
+.subheading { margin-bottom: 25px; font-size: 23px; }
+#capabilities .specimen-image { aspect-ratio: 1.35; }
+#capabilities .specimen-card p { font-size: 13px; line-height: 1.8; }
+#capabilities .specimen-card h3 { font-size: 20px; line-height: 1.25; }
+.imagery-note { margin: 20px 0 0; font-size: 10px; }
+.cohorts-block { padding-top: 80px; scroll-margin-top: 135px; }
+.custom-cohort { display: flex; align-items: center; justify-content: space-between; gap: 35px; margin-top: 28px; padding: 32px; background: #e1e8df; border: 1px solid #ced8cb; border-radius: 6px; }
+.custom-cohort h3 { font-size: 26px; }
+.custom-cohort p { max-width: 740px; margin-bottom: 0; font-size: 14px; }
+.custom-cohort .button { flex-shrink: 0; }
+.custom-cohort .eyebrow { margin-bottom: 12px; }
+.compliance-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.compliance-grid article { border-top: 1px solid var(--line); padding-top: 25px; }
+.compliance-grid h3 { font-size: 23px; line-height: 1.25; margin: 24px 0 15px; }
+.compliance-grid p { font-size: 13px; margin-bottom: 0; }
+#request-cohort { border-top: 1px solid var(--line); background: #f1f3ee; }
+#request-cohort .page-intro { padding-top: 75px; }
+@media (max-width: 900px) { .compliance-grid { grid-template-columns: repeat(2, 1fr); } .custom-cohort { align-items: flex-start; flex-direction: column; } }
+@media (max-width: 560px) { .science-hero { min-height: 350px; border-top-left-radius: 65px; } .science-hero figcaption { padding-inline: 18px; font-size: 8px; } #capabilities .specimen-grid { grid-template-columns: 1fr; gap: 30px; } #capabilities .specimen-image { aspect-ratio: 1.5; } .compliance-grid { grid-template-columns: 1fr; gap: 28px; } .compliance-grid h3 { margin-top: 17px; } .cohorts-block { padding-top: 55px; } .custom-cohort { padding: 24px; } }

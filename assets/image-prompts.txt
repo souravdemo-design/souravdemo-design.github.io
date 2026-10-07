@@ -1,0 +1,16 @@
+Generated with the built-in image_gen tool. Images are illustrative, not actual inventory or experimental data.
+
+spatial-tissue
+Use case: scientific-educational. Asset type: premium bioscience website hero, landscape 3:2 image. Create an elegant conceptual three-dimensional microscopy-inspired view of a human tissue microenvironment: clustered translucent cells with distinct round nuclei, delicate extracellular structures and gentle depth of field. Forest green, sage, muted blue and warm ivory, subtle luminous highlights, refined and scientifically inspired, not a clinical scan or real experimental result. No text, logos, labels, borders or watermark.
+
+ffpe
+Use case: product-mockup. Asset type: bioscience specimen card, landscape 3:2. Premium editorial scientific studio photograph, warm ivory background, sage and muted blue accents, soft natural light, refined restrained composition with generous breathing room. No text, logos, labels, watermark, people or hands. A small ivory histology tissue cassette with a paraffin wax embedded tissue block and two clean glass microscope slides, a subtle tiny pale tissue section within the wax. Accurate laboratory materials, no exposed organs or gore.
+
+frozen
+Use case: product-mockup. Asset type: bioscience specimen card, landscape 3:2. Premium editorial scientific studio photograph, warm ivory background, sage and muted blue accents, soft natural light, refined restrained composition with generous breathing room. No text, logos, labels, watermark, people or hands. A single white cryomold holding a pale frozen OCT tissue block, beside a closed small frosted cryovial in a minimal cool laboratory setting, subtle condensation and crisp material detail. No dramatic smoke or exposed organs.
+
+biofluids
+Use case: product-mockup. Asset type: bioscience specimen card, landscape 3:2. Premium editorial scientific studio photograph, warm ivory background, sage and muted blue accents, soft natural light, refined restrained composition with generous breathing room. No text, logos, labels, watermark, people or hands. Three capped transparent laboratory sample tubes in a clean small rack: one with clear straw-yellow serum, one pale golden plasma, and one dark red whole-blood sample, subtle volume differences and realistic sterile materials.
+
+pbmcs
+Use case: product-mockup. Asset type: bioscience specimen card, landscape 3:2. Premium editorial scientific studio photograph, warm ivory background, sage and muted blue accents, soft natural light, refined restrained composition with generous breathing room. No text, logos, labels, watermark, people or hands. A scientifically inspired three-dimensional illustration of isolated peripheral blood mononuclear cells suspended in a pale translucent medium: rounded lymphocyte-like cells with large blue nuclei and a few slightly larger monocyte-like cells. Elegant macro detail, not an experimental micrograph.
